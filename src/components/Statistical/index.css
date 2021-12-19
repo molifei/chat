@@ -1,0 +1,10 @@
+.statistical-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.statistical-wrap li {
+  flex: 1;
+}
+/*# sourceMappingURL=index.css.map */

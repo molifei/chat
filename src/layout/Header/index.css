@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.main-header .collapsed svg {
+  font-size: 20px;
+}
+/*# sourceMappingURL=index.css.map */
