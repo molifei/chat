@@ -4,7 +4,7 @@ import store from '@/store'
 import {getLogin} from '@/store/actionCreators/auth'
 import {useNavigate} from 'react-router-dom'
 import {useState} from 'react';
-import Logo from '@/assets/img/1.jpg'
+import Logo from '@/assets/img/logo.png'
 
 const {Header, Footer, Sider, Content} = Layout;
 
@@ -29,12 +29,18 @@ function Login() {
   return (
     <Layout className="login-wrap">
       <Header className="header">
-        <img src={Logo} alt=""/>
+        <img src={Logo} alt="" />
+        <h1>一个聊天室</h1>
       </Header>
-      <Content className="content">
-        <Form name="basic" labelCol={{span: 8}} wrapperCol={{span: 16}} initialValues={{remember: true}} onFinish={onFinish} onFinishFailed={onFinishFailed}
-              autoComplete="off"
-        >
+      <Content className="content animated bounceInDown">
+        <Form
+          name="basic"
+          labelCol={{span: 8}}
+          wrapperCol={{span: 16}}
+          initialValues={{remember: true}}
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+          autoComplete="off">
           <Form.Item
             label="Username"
             name="account"
@@ -45,7 +51,7 @@ function Login() {
               },
             ]}
           >
-            <Input/>
+            <Input />
           </Form.Item>
 
           <Form.Item
@@ -58,7 +64,7 @@ function Login() {
               },
             ]}
           >
-            <Input.Password/>
+            <Input.Password />
           </Form.Item>
 
           <Form.Item
@@ -84,7 +90,6 @@ function Login() {
           </Form.Item>
         </Form>
       </Content>
-      <Footer className="footer">备案号</Footer>
     </Layout>
   )
 }
